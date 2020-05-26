@@ -11,7 +11,7 @@ namespace Akka13
             actor.provider = cluster
             remote.dot-netty.tcp.hostname = ""localhost""
             remote.dot-netty.tcp.port = 9445
-            cluster.seed-nodes = [""akka.tcp://testSys@localhost:9445,akka.tcp://testSys@localhost:9446""]
+            cluster.seed-nodes = [""akka.tcp://testSys@localhost:9445"",""akka.tcp://testSys@localhost:9446""]
            }
         ";
 

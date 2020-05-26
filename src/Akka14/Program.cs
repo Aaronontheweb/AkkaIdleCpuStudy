@@ -10,8 +10,9 @@ namespace Akka14
            akka{
             actor.provider = cluster
             remote.dot-netty.tcp.hostname = ""localhost""
-            remote.dot-netty.tcp.port = 9445
-            cluster.seed-nodes = [""akka.tcp://testSys@localhost:9445,akka.tcp://testSys@localhost:9446""]
+            remote.dot-netty.tcp.port = 9446
+            remote.dot-netty.tcp.batching.enabled = false
+            cluster.seed-nodes = [""akka.tcp://testSys@localhost:9445"",""akka.tcp://testSys@localhost:9446""]
            }
         ";
 
